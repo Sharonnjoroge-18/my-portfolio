@@ -1,0 +1,67 @@
+/* ── DARK MODE (default) ── */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+:root {
+  --bg: linear-gradient(135deg, #0a0015, #130029, #1a0533, #0d0020);
+  --text-primary: #ffffff;
+  --text-secondary: #d1d5db;
+  --accent: #a78bfa;
+  --accent-dark: #7c3aed;
+  --accent-darker: #6d28d9;
+  --btn-secondary-border: #4c1d95;
+  --social-color: #ffffff;
+  --img-ring: #1a0533;
+  --specialty-color: #a78bfa;
+}
+
+/* ── LIGHT MODE ── */
+:root.light {
+  --bg: linear-gradient(135deg, #f3eeff, #ede9fe, #ffffff);
+  --text-primary: #1a1a2e;
+  --text-secondary: #4b5563;
+  --accent: #7c3aed;
+  --accent-dark: #7c3aed;
+  --accent-darker: #6d28d9;
+  --btn-secondary-border: #7c3aed;
+  --social-color: #1a1a2e;
+  --img-ring: #ede9fe;
+  --specialty-color: #7c3aed;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: var(--bg);
+  font-family: 'Inter', sans-serif;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+}
+h1, h2, h3 {
+  font-family: 'Outfit', sans-serif;
+}

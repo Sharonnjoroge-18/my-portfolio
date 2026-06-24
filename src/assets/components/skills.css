@@ -1,0 +1,148 @@
+/* Container Settings matching your index.css structural patterns */
+.skills {
+  width: 100%;
+  padding: 5rem 8%;
+}
+
+.skills-container {
+  margin: 0 auto;
+}
+
+/* Title Header Accent Line mapped to your typography variables */
+.skills-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: var(--text-primary);
+  position: relative;
+  display: inline-block;
+}
+
+.skills-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 4px;
+  background-color: var(--accent); /* Matches your global accent theme color */
+  border-radius: 2px;
+}
+
+/* Base Two-Column Layout */
+.skills-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 20px;
+}
+
+.skills-left {
+  flex: 1;
+}
+
+.skills-right {
+  flex: 1;
+}
+
+/* Column Text Headings using your secondary text color rules */
+.skills-left h3, 
+.skills-right h3 {
+  font-size: 1.4rem;
+  color: var(--text-secondary);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.skill-group {
+  margin-bottom: 2.5rem;
+}
+
+/* Icon Grid arrangement */
+.apps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.app-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  text-align: center;
+  gap: 0.5rem;
+}
+
+.app-card span {
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+/* Icon Brand Settings */
+.icon {
+  font-size: 2.5rem;
+}
+.icon.react { color: #00d8ff; }
+.icon.js { color: #f7df1e; background-color: #000; border-radius: 4px; }
+.icon.html { color: #e34f26; }
+.icon.css { color: #1572b6; }
+.icon.tailwind { color: #06b6d4; }
+.icon.git { color: #f05032; }
+/* GitHub icon automatically changes from White on dark theme to Off-Black on light theme */
+.icon.github { color: var(--text-primary); } 
+.icon.vscode { color: #007acc; }
+.icon.figma { color: #f24e1e; }
+.icon.postman { color: #ff6c37; }
+
+/* Mid Column Separation Line */
+.skills-divider {
+  width: 2px;
+  background: linear-gradient(to bottom, rgba(148,163,184,0.15), rgba(148,163,184,0));
+}
+
+/* Right Column Progress Bars styling */
+.progress-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 8px;
+  /* Uses a subtle opacity over whatever background gradient is active */
+  background-color: rgba(148, 163, 184, 0.15); 
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--accent); /* Changes color seamlessly during theme switches */
+  border-radius: 10px;
+  transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Responsiveness adjustments */
+@media (max-width: 850px) {
+  .skills-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .skills-divider {
+    display: none;
+  }
+  .apps-grid {
+    justify-content: flex-start;
+  }
+}
