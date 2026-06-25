@@ -1,0 +1,40 @@
+.footer {
+  width: 100%;
+  padding: 1rem 8%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-top: 1px solid rgba(167, 139, 250, 0.15);
+
+  background: var(--bg);
+}
+
+.footer p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+
+  color: var(--text-primary);
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+  background: var(--accent);
+  color: white;
+}
