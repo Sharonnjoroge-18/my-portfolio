@@ -16,9 +16,9 @@
 
 /* ── LIGHT MODE ── */
 :root.light {
-  --bg: linear-gradient(135deg, #f3eeff, #ede9fe, #ffffff);
+  --bg: linear-gradient(135deg, #faf9ff 0%, #f3f0ff 50%, #faf9ff 100%);
   --text-primary: #1a1a2e;
-  --text-secondary: #4b5563;
+  --text-secondary: #2d2f31;
   --accent: #7c3aed;
   --accent-dark: #7c3aed;
   --accent-darker: #6d28d9;

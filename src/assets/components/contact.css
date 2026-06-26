@@ -79,7 +79,7 @@
 .contact-form {
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(167, 139, 250, 0.15);
+  border: 1px solid #7c3aed55;
   border-radius: 15px;
   padding: 2rem;
   display: flex;
@@ -93,7 +93,7 @@
 .contact-form input,
 .contact-form textarea {
   background: transparent;
-  border: 1px solid rgba(167, 139, 250, 0.15);
+  border: 1px solid #7c3aed55;
   border-radius: 8px;
   padding: 16px;
   color: var(--text-primary);

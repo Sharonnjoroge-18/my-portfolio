@@ -50,7 +50,7 @@
 
 .project-card {
   background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(167,139,250,0.15);
+  border: 1px solid #7c3aed55;
   border-radius: 15px;
   overflow: hidden;
   transition: 0.3s;
@@ -147,5 +147,9 @@
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+  .project-links{
+    margin-top: 2rem;
+    
   }
 }

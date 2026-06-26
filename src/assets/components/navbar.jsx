@@ -1,4 +1,5 @@
 import './navbar.css';
+import logo from '../images/favicon.png';
 import { useState, useEffect } from 'react';
 import { FaBars, FaTimes, FaMoon, FaSun } from 'react-icons/fa';
 
@@ -43,9 +44,9 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <div className="navbar-logo">
-        Sharon
-      </div>
+      <a href="#home" className="navbar-logo">
+        <img src={logo} alt='SN logo' /> <span>SHARON</span>
+      </a>
 
       {/* Desktop Navigation */}
       <ul className="navbar-links">

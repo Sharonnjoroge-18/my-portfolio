@@ -19,7 +19,7 @@ function Hero() {
                     Let's build something great together.
                 </p>
                 <div className="hero-buttons">
-                    <button className="btn btn-primary">View My Work</button>
+                    <a href="#projects" className="btn btn-primary">View All Projects</a>
                     <button className="btn btn-secondary">Download Resume</button>
                 </div>
                 <div className='hero-socials'>
