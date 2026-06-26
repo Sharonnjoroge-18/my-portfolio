@@ -94,13 +94,14 @@
   background: transparent;
   color: var(--text-primary);
   border: 2px solid var(--btn-secondary-border);
+  cursor: not-allowed;
 }
 
-.btn-secondary:hover {
+/* .btn-secondary:hover {
   background: var(--accent-dark);
   color: #ffffff;
   transform: translateY(-2px);
-}
+} */
 
 .hero-socials {
   display: flex;

@@ -59,12 +59,23 @@ function Project(){
                             <small>{project.tech}</small>
                         </div>
                         <div className="project-links">
-                            <a href={project.demo}>
-                                {project.status === "Live"
-                                ? "Live Demo"
-                                : "Coming Soon"}
-                            </a>
-                            <a href={project.github}>
+                            {project.status === "Live" ? (
+                                <a
+                                href={project.demo}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                >
+                                    Live Demo
+                                </a>
+                            ) : (
+                                <span className="coming-soon">Coming Soon</span>
+                            )}
+
+                            <a href={project.github}
+                               href={project.github}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                            >
                                 GitHub
                             </a>
                         </div>
