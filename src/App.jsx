@@ -1,4 +1,4 @@
-import Hero from './assets/components/Hero';
+import Hero from './assets/components/hero';
 import Navbar from './assets/components/navbar';
 import About from './assets/components/about.jsx';
 import Skills from './assets/components/skills.jsx';
